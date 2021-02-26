@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?5kjf65");
+  src: url("../fonts/icomoon.eot?5kjf65#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?5kjf65") format("truetype"),
+    url("../fonts/icomoon.woff?5kjf65") format("woff"),
+    url("../fonts/icomoon.svg?5kjf65#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+  content: "\e945";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0d0b0c;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+html {
+  font-family: "Lato", "Source Sans Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", "Lato", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.header {
+  height: 70px;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  background-color: #0d0b0c;
+  opacity: 0.95;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header-wrapper {
+  height: inherit;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  display: inherit;
+  align-items: inherit;
+}
+
+.logo figure a img {
+  height: 50px;
+}
+
+.logo h3 {
+  margin-left: 10%;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-left: 30px;
+}
+
+.menu ul li a {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.menu-link:hover {
+  opacity: 0.5;
+}
+
+.burger-button {
+  display: none;
+  font-size: 30px;
+  position: fixed;
+  right: 1em;
+  top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger-button {
+    display: block;
+  }
+
+  .header-wrapper {
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 1em;
+  }
+
+  .menu {
+    width: 100%;
+    position: fixed;
+    top: -110vh;
+    display: flex;
+    background-color: #0d0b0c;
+    opacity: 0.95;
+  }
+
+  .menu.is-active {
+    top: 70px;
+  }
+
+  .menu ul {
+    width: 100%;
+    display: block;
+  }
+
+  .menu ul li {
+    border-bottom: 1px solid white;
+    margin: 0;
+  }
+
+  .menu-link {
+    display: block;
+    padding: 1em;
+    font-size: 1.3em;
+  }
+}
